@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+html,body,header,nav,footer {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ 
+/*基本レイアウト*/
+.pagebody {
+	width: 100%;
+}
+
+#sns,
+#sns2{
+	width: 15%;
+	height:15%;
+}
+.flex {
+	display:flex;
+}
+#flex {
+	display:flex;
+}
+
+/*ボックスの基本的な並べ方*/
+.entry {
+	margin: 0;
+	padding: 0;
+}
+
+.entry-header-1{
+	width:800px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.entry-box-two {
+	width: 50%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.entry-box-second {
+	width: 35%;
+}
+.entry-box-three {
+	width: 30%;
+	height: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+/*サイト全体を中央揃え*/
+.pagebody {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.comment{
+	text-align:center;
+}
+
+/*文字の色*/	
+.top,.news,.cafe,.about,.flower,.location,.contact{
+	color:#707070;
+}
+a {
+	color: #707070;
+	text-decoration: none;
+}
+
+/*文字の太さ*/	
+.bold{
+	font-weight:bold;
+	
+}
+/*文字の中央揃え*/	
+.aligncenter{
+	text-align:center;
+}
+
+.top .entry-box-two:hover,
+.flower .entry-box-two:hover,
+.entry-box-three:hover,
+.entry-box-two-color:hover,
+.about .click:hover,
+.news #flex p:hover,
+.flex-contact p:hover,
+.contact .aligncenter input[type="submit"]:hover,
+.news .flex p:hover{
+			opacity: 0.6 ;
+		}
+.news .flex .pages p:hover{
+	opacity: 1;
+		}
+.news .entry-section .flex .pages:hover{
+	opacity: 1;
+		
+}
+	
+/*スライダー*/
+.slider {
+	width:100%;
+	height:900px;
+}
+
+/*フェードイン*/
+.js_fadeIn {
+	opacity: 1;
+	transition: .8s;}
+.js_fadeIn_on {
+	opacity: 1.0;
+}
+/*上へスライド*/
+.js_Up {
+	transform: translate(0, 40px);
+	-webkit-transform: translate(0, 40px);
+	transition: .8s;
+}
+.js_Up_on {
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+}
+/*ズームイン*/
+.js_zoomIn {
+	transform: scale(0, 0);
+	-webkit-transform: scale(0, 0);
+	transition: .8s;
+}
+.js_zoomIn_on {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+} 
+/*フェードイン＋上へスライド*/
+.js_fadeInUp {
+	opacity: 0;
+	transform: translate(0, 60px);
+	-webkit-transform: translate(0, 60px);
+	transition: .8s;
+}
+.js_fadeInUp_on {
+	opacity: 1.0;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+}
+/*フェードイン＋左スライドイン*/
+.js_fadeInLeft {
+	opacity: 0;
+	transform: translate(-100px, 0);
+	-webkit-transform: translate(-100px, 0);
+	transition: .8s;
+}
+.js_fadeInLeft_on {
+	opacity: 1.0;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+}
+
+/*フェードイン＋長い左スライドイン*/
+.js_fadeInLeftLong {
+	opacity: 0;
+	transform: translate(-500px, 0);
+	-webkit-transform: translate(-500px, 0);
+	transition: .8s;
+}
+.js_fadeInLeftLong_on {
+	opacity: 1.0;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+}
+
+/*フェードイン＆右スライドイン*/
+.js_fadeInRight {
+	opacity: 0;
+	transform: translate(100px, 0);
+	-webkit-transform: translate(100px, 0);
+	transition: .8s;
+}
+.js_fadeInRight_on {
+	opacity: 1.0;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+}
+
+
+/*ディレイ*/
+.delay-02s {
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+.delay-03s {
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.delay-04s {
+	-webkit-transition-delay: .4s;
+	transition-delay: .4s;
+}
+.delay-05s {
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
+}
+.delay-06s {
+	-webkit-transition-delay: .6s;
+	transition-delay: .6s;
+}
+.delay-07s {
+	-webkit-transition-delay: .7s;
+	transition-delay: .7s;
+}
+.delay-08s {
+	-webkit-transition-delay: .8s;
+	transition-delay: .8s;
+}
+.delay-09s {
+	-webkit-transition-delay: .9s;
+	transition-delay: .9s;
+}
+.delay-10s {
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
+}
